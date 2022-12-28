@@ -1,0 +1,13 @@
+extends ./layout/layout
+
+block variables
+    - var title = 'Nimes'
+    - var isLink = true
+
+block content
+  main
+    .container
+        h1(style='margin-bottom: 3rem') Список страниц
+        a(href="/main.html" style='margin-bottom: 1rem; display: block') main.html
+        a(href="/catalog.html" style='margin-bottom: 1rem; display: block') catalog.html
+        a(href="/product.html" style='margin-bottom: 1rem; display: block') product.html

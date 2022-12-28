@@ -1,0 +1,14 @@
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+
+    @include vp-768 {
+        margin-bottom: 6rem;
+    }
+
+    @include vp-1200 {
+        margin-bottom: 7rem;
+    }
+}

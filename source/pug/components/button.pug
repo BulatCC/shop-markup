@@ -1,0 +1,5 @@
+mixin button(name, isLink)
+    if (isLink)
+        a.button= name
+    else
+        button(type='button').button= name

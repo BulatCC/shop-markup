@@ -1,0 +1,19 @@
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.5rem;
+    gap: 1.5rem 2.5rem;
+}
+
+
+.filter-buttons_button {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    color: var(--color-grey);
+    font-weight: 500;
+
+    &.active {
+        color: var(--color-default-black);
+        font-weight: 700;
+    }
+}

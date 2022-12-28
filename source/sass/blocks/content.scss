@@ -1,0 +1,24 @@
+.content {
+    &+.content {
+        padding-top: 6rem;
+
+        @include vp-768 {
+            padding-top: 10rem;
+        }
+
+        @include vp-1200 {
+            padding-top: 13rem;
+        }
+    }
+    &:last-of-type {
+        padding-bottom: 6rem;
+
+        @include vp-768 {
+            padding-bottom: 10rem;
+        }
+
+        @include vp-1200 {
+            padding-bottom: 13rem;
+        }
+    }
+}

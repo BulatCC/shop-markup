@@ -1,0 +1,106 @@
+extends ./layout/layout
+include ./components/button
+include ./components/nav
+include ./components/user-block
+include ./components/product-card
+include ./components/img
+
+block variables
+    - var title = 'Nimes'
+    - var isLink = true
+    - var pageMain = true
+
+block content
+  main
+    section.accent.content
+        h1.visually-hidden Denim
+        .container
+            .accent_wrapper
+                +nav('accent_nav')
+                +user-block('accent_user-block')
+            .accent_container
+                .accent_img-wrap
+                    +img({
+                        imgName: 'accent',
+                        altText: 'куртка',
+                        width: '202',
+                        height: '49',
+                        className: 'accent_img'})
+                .accent_left-side
+                    p.accent_slogan The quality you deserve
+                    img.accent_logo(src="./img/svg/denim.svg" alt="Логотип" width="205" height="70")
+                    +button('Check new collection', isLink)
+            .accent_footer
+                a(href="#").accent_arrow-down
+                    img(src="./img/svg/arrow-down.svg" alt="вниз" width="10" height="27")
+                .accent_social
+                    a(href="#").accent_social-link Instagram
+                    a(href="#").accent_social-link Facebook
+    section.content
+        .container
+            .title-container
+                h2.title Bestsellers
+                a(href="#").link.hidden-mobile View all
+            ul.product-list
+                li.product-list_item
+                    +product-card({
+                        img: 'man-jacket-1',
+                        title: 'Jacket',
+                        price: '$ 120'})
+                li.product-list_item
+                    +product-card({
+                        img: 'woman-overall-1',
+                        title: 'Overalls',
+                        price: '$ 140'})
+                li.product-list_item
+                    +product-card({
+                        img: 'woman-jacket-1',
+                        title: 'Jacket',
+                        price: '$ 90'})
+                li.product-list_item
+                    +product-card({
+                        img: 'woman-overall-2',
+                        title: 'Overalls',
+                        price: '$ 160'})
+            .hidden-tablet.link-container
+                a(href="#").link View all
+    section.content
+        .container
+            .banner
+                .banner_container
+                    .banner_content
+                        p.banner_text Street fashion collection
+                        h2.title Fall 2019
+                        +button('Shop now', isLink)
+                .banner_img-wrap
+                    +img({
+                        imgName: 'banner',
+                        altText: 'баннер',
+                        width: '320',
+                        height: '226',
+                        className: 'banner_img'})
+    section.content
+      .container
+        .title-container
+          h2.title Shop by category
+          a(href="#").link.hidden-mobile View all
+        ul.product-list.product-list--bottom
+          li.product-list_item
+              +product-card({
+                img: 'category-jeans',
+                title: 'Jeans'})
+              +product-card({
+                className: 'product-card--smaller',
+                img: 'category-overall',
+                title: 'Overalls'})
+          li.product-list_item
+              +product-card({
+                className: 'product-card--smaller',
+                img: 'category-shirt',
+                title: 'Shirts'})
+              +product-card({
+                img: 'category-jackets',
+                title: 'Jacket'})
+      .hidden-tablet.link-container
+        a(href="#").link View all
+

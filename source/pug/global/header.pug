@@ -1,0 +1,12 @@
+include ../components/user-block
+
+header.header
+    .container
+        if (pageMain)
+            .header_container.header_container--main
+                span.header_title Nîmes
+        else
+            .header_container
+                //- include ./components/burger.pug
+                span.header_title Nîmes
+                +user-block()

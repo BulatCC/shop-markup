@@ -1,0 +1,99 @@
+.filter {
+    .button {
+        width: 100%;
+    }
+
+    @include vp-768 {
+        position: relative;
+    }
+}
+
+.filter_dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.3rem;
+    border: 0.2rem solid var(--color-default-black);
+
+    &.active {
+        .filter_icon {
+            transform: scaleY(-1);
+        }
+    }
+}
+
+.filter_icon {
+    transition: var(--default-transition);
+}
+
+.filter_dropdown-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.filter_content {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 2.5rem;
+    z-index: 1;
+    width: 100%;
+    background-color: var(--color-default-white);
+    transition: opacity, var(--default-transition);
+    opacity: 0;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity, var(--default-transition);
+    }
+
+    @include vp-768 {
+        position: absolute;
+        padding-bottom: 0;
+        top: 4.6rem;
+        bottom: unset;
+        border: 0.2rem solid var(--color-default-black);
+    }
+}
+
+.filter_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 2rem 1rem;
+
+    @include vp-768 {
+        display: none;
+    }
+}
+
+.filter_button {
+    padding: 0.5rem;
+}
+
+.filter_title {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: fit-content;
+    margin: auto;
+    font-size: 1.8rem;
+}
+
+.filter_button-container {
+    margin-top: auto;
+    padding: 0 1.5rem;
+
+    @include vp-768 {
+        padding: 0;
+    }
+}
