@@ -1,5 +1,4 @@
 extends ./layout/layout
-include ./components/button
 
 block variables
     - var title = 'Login'
@@ -7,7 +6,7 @@ block variables
 block content
     main
         .container.d-flex.height-100
-            form.form
+            form.form.m-auto
                 h1.title.form_title Login
                 .form_container.error
                     input(type="text" id="login" placeholder=' ').form_input.input-field
@@ -15,5 +14,5 @@ block content
                 .form_container
                     input(type="text" placeholder=' ').form_input.input-field
                     label(for="login").form_label Password
-                +button('Войти', false, 'form_button')
+                button.button.form_button Login
 

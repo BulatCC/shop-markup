@@ -925,6 +925,10 @@ input[type="radio"].visually-hidden {
   height: 100%;
 }
 
+.width-100 {
+  width: 100%;
+}
+
 .mb-3 {
   margin-bottom: 3rem;
 }
@@ -935,6 +939,10 @@ input[type="radio"].visually-hidden {
 
 .mt-2-mobile {
   margin-top: 2rem;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .header_container {
@@ -1609,7 +1617,6 @@ input[type="radio"].visually-hidden {
   max-width: 50rem;
   padding: 1.5rem;
   width: 100%;
-  margin: auto;
   background-color: var(--color-light-grey);
 }
 

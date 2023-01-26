@@ -1,5 +1,4 @@
 extends ./layout/layout
-include ./components/button
 include ./components/nav
 include ./components/user-block
 include ./components/product-card
@@ -29,7 +28,7 @@ block content
                 .accent_left-side
                     p.accent_slogan The quality you deserve
                     img.accent_logo(src="img/svg/denim.svg" alt="Логотип" width="205" height="70")
-                    +button('Check new collection', isLink)
+                    a(href="#").button Check new collection
             .accent_footer
                 a(href="#").accent_arrow-down
                     img(src="img/svg/arrow-down.svg" alt="вниз" width="10" height="27")
@@ -71,7 +70,7 @@ block content
                     .banner_content
                         p.banner_text Street fashion collection
                         h2.title Fall 2019
-                        +button('Shop now', isLink)
+                        a(href="#").button Shop now
                 .banner_img-wrap
                     +img({
                         imgName: 'banner',
