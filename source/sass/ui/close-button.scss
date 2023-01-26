@@ -1,0 +1,23 @@
+.close-button {
+    padding: 0;
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 2rem;
+      height: 0.2rem;
+      background-color: var(--color-default-black);
+      left: 0.5rem;
+      top: 1.5rem;
+      transform: rotate(135deg);
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+}

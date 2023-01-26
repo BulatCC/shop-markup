@@ -1,0 +1,17 @@
+include ./img
+
+mixin product-card-cart(data)
+    article.product-card-cart
+        a(href="#")
+            +img({
+                imgName: data.img,
+                altText: data.title,
+                width: data.width,
+                height: data.height,
+                className: 'product-card-cart_img'})
+        .product-card-cart_description
+            a(href="#").product-card-cart_title Jacket
+            span.product-card-cart_text Color: white
+            span.product-card-cart_text Size: S
+            span.product-card-cart_price= data.price
+        button.close-button.product-card-cart_button удалить

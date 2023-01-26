@@ -35,6 +35,9 @@
 @import "blocks/product-slider";
 @import "blocks/product-details";
 @import "blocks/form";
+@import "blocks/product-card-cart";
+@import "blocks/total";
+@import "blocks/cart";
 
 // UI
 // ---------------------------------
@@ -51,5 +54,6 @@
 @import "ui/filter-color";
 @import "ui/filter-radio";
 @import "ui/input-field";
+@import "ui/close-button";
 
 // ---------------------------------

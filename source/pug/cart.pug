@@ -1,0 +1,29 @@
+extends ./layout/layout
+include ./components/img
+include ./components/product-card-cart
+
+block variables
+    - var title = 'Корзина'
+
+block content
+    main
+        section.content.mt-3.mt-6-descktop
+            .container
+                .title-container
+                    h1.title Корзина
+                .cart
+                    .cart_wrap
+                        - for (var i = 1; i < 4; i++) {
+                            +product-card-cart({
+                                img: `woman-jacket-${i}`,
+                                title: 'Jacket',
+                                width: '11',
+                                height: '130',
+                                price: `$ ${i + i}0`})
+                        - }
+                    .total.mt-3.mt-0-tablet
+                        .total_amount
+                            span Total:
+                            span $ 240
+                        button.button.total_button Buy
+
