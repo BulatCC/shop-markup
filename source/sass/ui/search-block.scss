@@ -7,22 +7,23 @@
             opacity: 1;
         }
     }
+
+    .search-block_input {
+        width: 23.5rem;
+
+        @include vp-768 {
+            width: 40rem;
+        }
+    }
 }
 
 .search-block_input {
     position: absolute;
     right: -1rem;
     top: -0.9rem;
-    padding: 0.5rem;
     padding: 0.5rem 3rem 0.5rem 1rem;
-    outline: none;
-    height: 4.7rem;
-    width: 23.5rem;
-    border: 0.2rem solid var(--color-default-black);
     visibility: hidden;
-    transition: var(--default-transition);
     opacity: 0;
-    font-weight: 500;
 
     @include vp-768 {
         height: 5rem;

@@ -95,6 +95,7 @@
     @include vp-768 {
         display: flex;
         max-width: 42.2vw;
+
         overflow: hidden;
     }
 
@@ -106,6 +107,11 @@
         @include vp-768 {
             width: 100%;
             max-height: 17vw;
+            object-fit: cover;
+        }
+
+        @include vp-1200 {
+            max-height: 11.5rem;
         }
     }
 
@@ -115,9 +121,17 @@
             opacity: 0.5;
         }
 
+        &:hover {
+            cursor: pointer;
+        }
+
         &.swiper-slide-thumb-active {
             @include vp-768 {
                 opacity: 1;
+            }
+
+            &:hover {
+                cursor: default;
             }
         }
     }

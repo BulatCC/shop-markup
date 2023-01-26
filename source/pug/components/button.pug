@@ -1,5 +1,5 @@
-mixin button(name, isLink)
+mixin button(name, isLink, className)
     if (isLink)
-        a.button= name
+        a.button(class= className)= name
     else
-        button(type='button').button= name
+        button.button(type='button' class= className)= name

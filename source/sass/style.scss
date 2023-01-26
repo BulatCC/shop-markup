@@ -27,13 +27,14 @@
 @import "blocks/product-card";
 @import "blocks/banner";
 @import "blocks/footer";
-@import "blocks/categories-list";
+@import "blocks/buttons-choose";
 @import "blocks/filter";
 @import "blocks/pagination";
 @import "blocks/head-block";
 @import "blocks/filter-container";
 @import "blocks/product-slider";
 @import "blocks/product-details";
+@import "blocks/form";
 
 // UI
 // ---------------------------------
@@ -44,10 +45,11 @@
 @import "ui/title-container";
 @import "ui/search-block";
 @import "ui/burger";
-@import "ui/crumbs";
+@import "ui/bread-crumbs";
 @import "ui/accordion";
-@import "ui/filter-buttons";
+@import "ui/sort-buttons";
 @import "ui/filter-color";
 @import "ui/filter-radio";
+@import "ui/input-field";
 
 // ---------------------------------

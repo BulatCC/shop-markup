@@ -1,4 +1,4 @@
 mixin img(options)
     picture
-        source(type="image/webp" srcset=`./img/webp/${options.imgName}.webp, ./img/webp/${options.imgName}@2x.webp 2x`)
-        img(src=`./img/${options.imgName}.jpg` srcset=`./img/${options.imgName}@2x.jpg 2x` alt=options.altText width= options.width height=options.height class= options.className)
+        source(type="image/webp" srcset=`img/webp/${options.imgName}.webp, img/webp/${options.imgName}@2x.webp 2x`)
+        img(src=`img/${options.imgName}.jpg` srcset=`img/${options.imgName}@2x.jpg 2x` alt=options.altText width= options.width height=options.height class= options.className)

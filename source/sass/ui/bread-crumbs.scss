@@ -1,8 +1,9 @@
-.crumbs {
+.bread-crumbs {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.crumbs_link {
+.bread-crumbs_link {
     position: relative;
     font-size: 1.8rem;
     line-height: 1;

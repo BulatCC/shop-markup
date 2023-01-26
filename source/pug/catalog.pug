@@ -1,31 +1,31 @@
 extends ./layout/layout
-include ./components/crumbs
+include ./components/bread-crumbs
 include ./components/product-card
 
 block variables
     - var title = 'Catalog'
 
 block content
-    main.mt-2-mobile
-        .container
-            +crumbs('mb-3 hidden-tablet')
+    main
+        .container.mt-2-mobile.mt-0-tablet
+            +bread-crumbs('mb-3 hidden-tablet')
         include ./components/head-block
         .container
             .filter-container.mb-3
                 include ./components/filter
-                nav.categories-list
-                    ul.categories-list_list.scrollable
-                        li.categories-list_item
-                            a(href="#").categories-list_link.active Woman
-                        li.categories-list_item
-                            a(href="#").categories-list_link Man
-            ul.filter-buttons.mb-3
-                li.filter-buttons_item
-                    button(type='button').filter-buttons_button.active Popular
-                li.filter-buttons_item
-                    button(type='button').filter-buttons_button Low to high
-                li.filter-buttons_item
-                    button(type='button').filter-buttons_button High to low
+                nav.buttons-choose
+                    ul.buttons-choose_list.scrollable
+                        li.buttons-choose_item
+                            a(href="#").buttons-choose_link.active Woman
+                        li.buttons-choose_item
+                            a(href="#").buttons-choose_link Man
+            ul.sort-buttons.mb-3
+                li.sort-buttons_item
+                    button(type='button').sort-buttons_button.active Popular
+                li.sort-buttons_item
+                    button(type='button').sort-buttons_button Low to high
+                li.sort-buttons_item
+                    button(type='button').sort-buttons_button High to low
             section.content
                 ul.product-list.product-list--catalog
                     - for (var i = 1; i < 10; i++) {

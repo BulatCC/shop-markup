@@ -8,7 +8,7 @@ block variables
 
 block content
     main
-        section.product-details.content
+        section.product-details.content.mt-2-mobile.mt-4-tablet.mt-6-descktop
             .product-details_container
                 .product-slider
                     .swiper-wrapper
@@ -22,9 +22,9 @@ block content
                                     className: 'product-slider_img'})
                         - }
                     button(type='button').product-slider_button.product-slider_button--prev
-                        img(class="product-slider_icon" src="./img/svg/arrow-slider.svg" width="8" height="16")
+                        img(class="product-slider_icon" src="img/svg/arrow-slider.svg" width="8" height="16")
                     button(type='button').product-slider_button.product-slider_button--next
-                        img(class="product-slider_icon" src="./img/svg/arrow-slider.svg" width="8" height="16")
+                        img(class="product-slider_icon" src="img/svg/arrow-slider.svg" width="8" height="16")
                 .product-slider_pagination
                     .swiper-wrapper
                         - for (var i = 1; i < 6; i++) {
@@ -47,17 +47,17 @@ block content
                             +filter-radio('product-details_radio')
                         li.product-details_item
                             h3.product-details_sub-title Size
-                            ul.filter-buttons
-                                li.filter-buttons_item
-                                    button(type='button').filter-buttons_button XS
-                                li.filter-buttons_item
-                                    button(type='button').filter-buttons_button.active S
-                                li.filter-buttons_item
-                                    button(type='button').filter-buttons_button M
-                                li.filter-buttons_item
-                                    button(type='button').filter-buttons_button L
-                                li.filter-buttons_item
-                                    button(type='button').filter-buttons_button XL
+                            ul.sort-buttons
+                                li.sort-buttons_item
+                                    button(type='button').sort-buttons_button XS
+                                li.sort-buttons_item
+                                    button(type='button').sort-buttons_button.active S
+                                li.sort-buttons_item
+                                    button(type='button').sort-buttons_button M
+                                li.sort-buttons_item
+                                    button(type='button').sort-buttons_button L
+                                li.sort-buttons_item
+                                    button(type='button').sort-buttons_button XL
                     p.product-details_price $ 160
                     button(type='button').button.product-details_button Add to cart
         section.content

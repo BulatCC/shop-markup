@@ -3,7 +3,7 @@ include ./filter-radio
 .filter
     button(type='button').filter_dropdown
         span.filter_dropdown-title Filter by
-        img(class="filter_icon" src="./img/svg/arrow-down-accordion.svg" width="16" height="8")
+        img(class="filter_icon" src="img/svg/arrow-down-accordion.svg" width="16" height="8")
     .filter_content
         .filter_header
             button(type='button').filter_button Clear all
@@ -13,23 +13,23 @@ include ./filter-radio
             li.accordion_item.active
                 .accordion_title-wrap
                     span.accordion_title Color
-                    img(class="accordion_icon" src="./img/svg/arrow-down-accordion.svg" width="16" height="8")
+                    img(class="accordion_icon" src="img/svg/arrow-down-accordion.svg" width="16" height="8")
                 .accordion_wrapper
                     .accordion_content
                         +filter-radio()
             li.accordion_item.active
                 .accordion_title-wrap
                     span.accordion_title Collection
-                    img(class="accordion_icon" src="./img/svg/arrow-down-accordion.svg" width="16" height="8")
+                    img(class="accordion_icon" src="img/svg/arrow-down-accordion.svg" width="16" height="8")
                 .accordion_wrapper
                     .accordion_content
-                        ul.filter-buttons
-                            li.filter-buttons_item
-                                button(type='button').filter-buttons_button Casual
-                            li.filter-buttons_item
-                                button(type='button').filter-buttons_button.active Petite
-                            li.filter-buttons_item
-                                button(type='button').filter-buttons_button Classic
+                        ul.sort-buttons
+                            li.sort-buttons_item
+                                button(type='button').sort-buttons_button Casual
+                            li.sort-buttons_item
+                                button(type='button').sort-buttons_button.active Petite
+                            li.sort-buttons_item
+                                button(type='button').sort-buttons_button Classic
         .filter_button-container
             button(type='button').button Apply (9 products)
             button(type='button').button.button--white.hidden-mobile Clear all

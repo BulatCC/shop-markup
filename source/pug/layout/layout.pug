@@ -14,7 +14,8 @@ html(lang="ru")
         link(rel="stylesheet" href="css/style.min.css")
 
     body
-        include ../global/header.pug
-        block content
-        include ../global/footer.pug
-        script(src="js/main.min.js")
+        .site-wrapper
+            include ../global/header.pug
+            block content
+            include ../global/footer.pug
+            script(src="js/main.min.js")

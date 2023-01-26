@@ -1,6 +1,6 @@
 .button {
     display: inline-block;
-    padding: 2.4rem 1.6rem;
+    padding: 2rem 1.6rem;
     background-color: var(--color-default-black);
     color: var(--color-default-white);
     font-weight: 700;
@@ -9,6 +9,10 @@
     cursor: pointer;
     transition: var(--default-transition);
 
+    @include vp-768 {
+        padding: 2.4rem 1.6rem;
+    }
+
     &:hover {
         opacity: 0.7;
     }
@@ -16,5 +20,10 @@
     &--white {
         background-color: var(--color-default-white);
         color: var(--color-default-black);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
     }
 }

@@ -1,0 +1,19 @@
+extends ./layout/layout
+include ./components/button
+
+block variables
+    - var title = 'Login'
+
+block content
+    main
+        .container.d-flex.height-100
+            form.form
+                h1.title.form_title Login
+                .form_container.error
+                    input(type="text" id="login" placeholder=' ').form_input.input-field
+                    label(for="login").form_label Login incorrect
+                .form_container
+                    input(type="text" placeholder=' ').form_input.input-field
+                    label(for="login").form_label Password
+                +button('Войти', false, 'form_button')
+
