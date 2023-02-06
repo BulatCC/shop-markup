@@ -1,14 +1,13 @@
 include ./filter-radio
 
-.filter
-    button(type='button').filter_dropdown
-        span.filter_dropdown-title Filter by
-        img(class="filter_icon" src="img/svg/arrow-down-accordion.svg" width="16" height="8")
-    .filter_content
-        .filter_header
-            button(type='button').filter_button Clear all
-            h3.filter_title Filter
-            button(type='button').filter_button.js-filter-close Close
+.dropdown-menu
+    button(type='button').dropdown-menu_dropdown
+        span.dropdown-menu_dropdown-title Filter by
+        img(class="dropdown-menu_icon" src="img/svg/arrow-down-accordion.svg" width="16" height="8")
+    .dropdown-menu_content
+        .dropdown-menu_header
+            h3.dropdown-menu_title Filter
+            button(type='button').dropdown-menu_button.js-filter-close Close
         ul.accordion
             li.accordion_item.active
                 .accordion_title-wrap
@@ -30,6 +29,6 @@ include ./filter-radio
                                 button(type='button').sort-buttons_button.active Petite
                             li.sort-buttons_item
                                 button(type='button').sort-buttons_button Classic
-        .filter_button-container
+        div
             button(type='button').button Apply (9 products)
-            button(type='button').button.button--white.hidden-mobile Clear all
+            button(type='button').button.button--white.button--border-bottom Clear all

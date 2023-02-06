@@ -49,15 +49,20 @@ block content
                             h3.product-details_sub-title Size
                             ul.sort-buttons
                                 li.sort-buttons_item
-                                    button(type='button').sort-buttons_button XS
+                                    input(type="radio", name="sort-button" class="sort-buttons_button" id="1" value="1")
+                                    label(for="1") XS
                                 li.sort-buttons_item
-                                    button(type='button').sort-buttons_button.active S
+                                    input(type="radio", name="sort-button" class="sort-buttons_button" id="2" value="2")
+                                    label(for="2") S
                                 li.sort-buttons_item
-                                    button(type='button').sort-buttons_button M
+                                    input(type="radio", name="sort-button" class="sort-buttons_button" id="3" value="3")
+                                    label(for="3") M
                                 li.sort-buttons_item
-                                    button(type='button').sort-buttons_button L
+                                    input(type="radio", name="sort-button" class="sort-buttons_button" id="4" value="4")
+                                    label(for="4") L
                                 li.sort-buttons_item
-                                    button(type='button').sort-buttons_button XL
+                                    input(type="radio", name="sort-button" class="sort-buttons_button" id="5" value="5")
+                                    label(for="5") XL
                     p.product-details_price $ 160
                     button(type='button').button.product-details_button Add to cart
         section.content

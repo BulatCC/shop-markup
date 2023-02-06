@@ -6,12 +6,11 @@
         align-items: center;
     }
 
-
     @include vp-1200 {
         grid-template-columns: 3fr 1fr;
     }
 
-    .filter {
+    .dropdown-menu {
         margin-bottom: 3rem;
 
         @include vp-768 {

@@ -22,6 +22,10 @@
         color: var(--color-default-black);
     }
 
+    &--border-bottom {
+        border-bottom: 0.1rem solid var(--color-default-black);
+    }
+
     &:disabled {
         opacity: 0.5;
         cursor: not-allowed;

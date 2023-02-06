@@ -1,0 +1,45 @@
+.filter-radio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 3rem;
+}
+
+.filter-radio_item {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.filter-radio_button {
+    display: none;
+}
+
+.filter-radio_button + label {
+    position: relative;
+    cursor: pointer;
+}
+
+.filter-radio_button + label::before,
+.filter-radio_button:checked + label::after {
+    content: '';
+    position: absolute;
+    top: 1.2rem;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.filter-radio_button + label::before {
+    left: 0.3rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: var(--radio-color);
+    cursor: pointer;
+}
+
+.filter-radio_button:checked + label::after {
+    left: 0;
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 0.1rem solid var(--radio-color);
+    cursor: pointer;
+}
